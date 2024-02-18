@@ -19,7 +19,7 @@ const topPosts = posts.sort(sortDate).slice(0, 2);
       description="Nicole Huang is a Frontend Developer"
     />
   </head>
-  <MainBody>
+  <MainBody client:visible>
     <section id="hero" class="py-24 intro-animation relative">
       <h1 class="text-5xl mb-4 font-europa_bold text-center">
         Hello, my name is Nicole
@@ -66,6 +66,7 @@ const topPosts = posts.sort(sortDate).slice(0, 2);
             symbol="../../public/images/tiktok.png"
             symbolWidth={100}
             text="The workspace for Chinese TikTok customer service to address user feedback."
+            picture="../../public/images/offline_workspace.png"
             client:visible
           />
           <WorkDisplay
@@ -73,39 +74,11 @@ const topPosts = posts.sort(sortDate).slice(0, 2);
             symbol="../../public/images/capcut.png"
             symbolWidth={100}
             text="Offer user tutorials for video editing. (a module within the Chinese CapCut App)"
+            picture="../../public/images/capcut_tutorial.jpg"
             client:visible
           />
         </div>
       </section>
     </section>
-    <!-- <section class="fade-in pb-12">
-      <h3 class="uppercase text-sm mb-12 font-bold text-accent">
-        Recent Thoughts
-      </h3>
-      <ul>
-        {
-          topPosts.map(({ frontmatter, url }) => (
-            <PostItem
-              title={frontmatter.title}
-              published={frontmatter.published}
-              url={url}
-            />
-          ))
-        }
-      </ul>
-      <a href="/thoughts" class="more-link"
-        >More <span class="arrow">→</span>
-      </a>
-    </section>
-    <section class="fade-in pt-12">
-      <h3 class="uppercase text-sm mb-12 font-bold text-accent">Experiments</h3>
-      <main class="flex gap-4 overflow-auto">
-        <GameOfLife />
-        <ImageColors client:visible />
-      </main>
-      <a href="/experiments" class="more-link"
-        >More <span class="arrow">→</span>
-      </a>
-    </section> -->
   </MainBody>
 </html>

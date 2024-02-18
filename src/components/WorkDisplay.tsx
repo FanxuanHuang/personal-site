@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ImageViewer from 'react-simple-image-viewer';
 
 interface Props {
   bgColor: string;
@@ -6,10 +7,12 @@ interface Props {
   symbolWidth: number;
   text: string;
   url?: string;
+  picture?: string;
 }
 
 export default function WorkDisplay(props: Props) {
   const [isHovered, setIsHovered] = useState<boolean>(false);
+  const [isViewerOpen, setIsViewerOpen] = useState(false);
 
   return (
     <div
@@ -35,13 +38,22 @@ export default function WorkDisplay(props: Props) {
           ) : (
             <button
               className="cursor-pointer w-fit h-fit text-xl px-5 py-2 mt-8 bg-[var(--green3)] rounded-full shrink-0"
-              // onClick={() => window.open(props.url)}
+              onClick={() => setIsViewerOpen(true)}
             >
               Visit Picture
             </button>
           )}
         </div>
       ) : null}
+      {isViewerOpen && (
+        <ImageViewer
+          src={[props.picture]}
+          // currentIndex={ currentImage }
+          disableScroll={ false }
+          closeOnClickOutside={ true }
+          onClose={() => setIsViewerOpen(false)}
+        />
+      )}
     </div>
   );
 }

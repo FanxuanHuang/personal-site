@@ -5,12 +5,12 @@ import Footer from "../components/Footer.jsx";
 
 <body class="bg-base text-contrast">
   <header class="py-10 top-0 z-10 bg-base">
-    <Nav />
+    <Nav client:visible />
   </header>
   <main class="mx-auto">
     <slot />
   </main>
-  <Footer />
+  <Footer client:visible />
   <!--<canvas id='canvas' class='w-full h-full absolute top-0' style='z-index: -1;'></canvas>-->
   <script is:inline defer>
     const circle = document.getElementById("circle");
