@@ -14,12 +14,12 @@ const { content } = Astro.props;
   <MainBody>
     <div class="post-content">
       <header class='py-12 intro-animation'>
-        <a href='/thoughts' class='more-link'><span class="arrow left">&larr;</span>All Posts</a>
+        <!-- <a href='/thoughts' class='more-link'><span class="arrow left">&larr;</span>All Posts</a> -->
         <h1>{content.title}</h1>
       </header>
       <div class='fade-in'>
         <slot />
-        <a href='/thoughts' class='more-link my-12'><span class="arrow left">&larr;</span>All Posts</a>
+        <!-- <a href='/thoughts' class='more-link my-12'><span class="arrow left">&larr;</span>All Posts</a> -->
       </div>
     </div>
     <script>

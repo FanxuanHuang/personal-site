@@ -2,14 +2,7 @@
 // Component Imports
 import MainHead from "../components/MainHead.astro";
 import MainBody from "../components/MainBody.astro";
-import PostItem from "../components/PostItem.jsx";
-import ImageColors from "../components/ImageColor.jsx";
-import { sortDate } from "../scripts/utils.js";
-import GameOfLife from "../components/GameOfLife.astro";
 import WorkDisplay from "../components/WorkDisplay";
-
-const posts = await Astro.glob("./thoughts/*.md");
-const topPosts = posts.sort(sortDate).slice(0, 2);
 ---
 
 <html lang="en">
