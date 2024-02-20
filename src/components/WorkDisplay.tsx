@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import ImageViewer from 'react-simple-image-viewer';
 
-// interface Props {
-//   bgColor: string;
-//   symbol: string;
-//   symbolWidth: number;
-//   text: string;
-//   url?: string;
-//   picture?: string;
-// }
+interface Props {
+  bgColor: string;
+  symbol: string;
+  symbolWidth: number;
+  text: string;
+  url?: string;
+  picture?: string;
+}
 
-export default function WorkDisplay(props) {
-  const [isHovered, setIsHovered] = useState(false);
+export default function WorkDisplay(props: Props) {
+  const [isHovered, setIsHovered] = useState<boolean>(false);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
 
   return (
