@@ -9,7 +9,7 @@ export default defineConfig(
   /** @type {import('astro').AstroUserConfig} */
   {
     integrations: [react(), sitemap(), tailwind(), partytown()],
-    site: "https://benadam.me",
+    site: "https://nicolehuang.me",
     markdown: {
       rehypePlugins: [
         ["rehype-slug", {}],

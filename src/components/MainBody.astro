@@ -61,12 +61,12 @@ import Footer from "../components/Footer.jsx";
       count += 2;
     }
 
-    document.querySelectorAll(".nav-link").forEach((link) => {
-      const { pathname } = window.location;
-      const { pathname: path } = link;
-      if (path === pathname || (path.length > 1 && pathname.includes(path))) {
-        link.classList.add("active");
-      }
-    });
+    // document.querySelectorAll(".nav-link").forEach((link) => {
+    //   const { pathname } = window.location;
+    //   const { pathname: path } = link;
+    //   if (path === pathname || (path.length > 1 && pathname.includes(path))) {
+    //     link.classList.add("active");
+    //   }
+    // });
   </script>
 </body>
