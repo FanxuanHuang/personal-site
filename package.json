@@ -23,7 +23,6 @@
     "unified": "^11.0.4"
   },
   "dependencies": {
-    "framer-motion": "^10.17.9",
     "image-pal-canvas": "^1.2.5",
     "react-simple-image-viewer": "^1.2.2"
   }

@@ -14,9 +14,6 @@ function Nav() {
       </a>
       <div className='justify-end items-center gap-8 hidden lg:flex font-europa_regular'>
         <a className='nav-link' href='/'>Home</a>
-        {/* <a className='nav-link' href='/thoughts'>Thoughts</a> */}
-        {/* <a className='nav-link' href='/experiments'>Experiments</a> */}
-        {/* <a className='nav-link' href='/work'>Work</a> */}
         <button
           className="text-lg text-[var(--green2)] hover:text-[white] border-[var(--green2)] hover:bg-[var(--green2)] border-2 cursor-pointer w-fit h-fit px-5 py-2 mt-8s rounded-full shrink-0"
           onClick={() => {
