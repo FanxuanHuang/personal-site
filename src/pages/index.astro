@@ -3,6 +3,13 @@
 import MainHead from "../components/MainHead.astro";
 import MainBody from "../components/MainBody.astro";
 import WorkDisplay from "../components/WorkDisplay";
+
+import meImg from "../../public/images/me.png";
+import dedaoImg from "../../public/images/dedao.png";
+import tiktokImg from "../../public/images/tiktok.png";
+import offlineImg from "../../public/images/offline_workspace.png";
+import capcutImg from "../../public/images/capcut.png";
+import tutorialImg from "../../public/images/capcut_tutorial.jpg";
 ---
 
 <html lang="en">
@@ -23,7 +30,7 @@ import WorkDisplay from "../components/WorkDisplay";
       <div class="flex justify-center pt-10">
         <img
           class="rounded-full"
-          src="../../public/images/me.png"
+          src={meImg.src}
           width="200px"
         />
       </div>
@@ -48,7 +55,7 @@ import WorkDisplay from "../components/WorkDisplay";
         <div class="max-w-[1280px] mx-auto flex mt-20 gap-4">
           <WorkDisplay
             bgColor="white"
-            symbol="../../public/images/dedao.png"
+            symbol={dedaoImg.src}
             symbolWidth={200}
             text="Efficient knowledge services."
             url="https://www.igetget.com/"
@@ -56,18 +63,18 @@ import WorkDisplay from "../components/WorkDisplay";
           />
           <WorkDisplay
             bgColor="black"
-            symbol="../../public/images/tiktok.png"
+            symbol={tiktokImg.src}
             symbolWidth={100}
             text="The workspace for Chinese TikTok customer service to address user feedback."
-            picture="../../public/images/offline_workspace.png"
+            picture={offlineImg.src}
             client:visible
           />
           <WorkDisplay
             bgColor="white"
-            symbol="../../public/images/capcut.png"
+            symbol={capcutImg.src}
             symbolWidth={100}
             text="Offer user tutorials for video editing. (a module within the Chinese CapCut App)"
-            picture="../../public/images/capcut_tutorial.jpg"
+            picture={tutorialImg.src}
             client:visible
           />
         </div>
